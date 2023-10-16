@@ -1,0 +1,194 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+</style>
+
+*{
+padding: 0 ;
+margin: 0;
+box-sizing: border-box;
+
+}
+:root{
+    --primary-color:#578FFA ;
+    --text-color: #FFFFFF;
+
+}
+html{
+    font-size: 10px;
+
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #9BD1EE;
+    color: azure;
+}
+
+/*COMMON STYLES*/
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--text-color);
+    text-align: justify;
+
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem 0;
+}
+.item_pretitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: #A3C8FF;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/*LAYOUT*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 4rem;
+    background: #2b2b2b;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+
+}
+
+.group1, 
+.group2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.group3{
+
+    width: 100%;
+    margin: auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.group3 > div{
+    flex: 1;
+}
+
+/*PROFILE*/
+.profile_container{
+    display: flex;
+    gap: 2rem;
+
+}
+.profile_profileImg{
+    max-width: 250px;
+    margin-top: 2rem;
+}
+
+.profile_name_FirstName{
+
+    color: #578FFA;
+    font-weight: 700;
+    font-size: clamp(2rem, 10vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+
+}
+.profile_name_LastName{
+
+    color: azure;
+    font-weight: 100;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -.8rem;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+.downloadbtn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+
+}
+.downloadbtn:hover{
+    color: #578FFA;
+}
+@media only screen and (max-width: 768px){
+    .profile_container{
+        flex-direction:column;
+    }
+}
+
+/*SKILLS*/
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 0%;
+    line-height: 2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/*EDUCATION*/
+.edu_item{
+    margin-top: 2rem;
+}
+
+/*PROJECT */
+.project_item{
+    margin-bottom: 2rem;
+}
+/*--------------------------------------------------------------*/
+
+hr{
+    grid-column: 1/-1;
+    width: 75%;
+}
+
+.visitors{
+    text-align: right;
+}

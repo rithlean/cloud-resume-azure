@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="main.js"></script>
     <title>Harith's Resume</title>
 </head>
 
@@ -139,26 +140,11 @@
         <div class="visitors">
             <h3 class="title">visitor count</h3>
                 <div class="pageview_count">
-                    <p class="item_subtitle">Pageviews: <a class="counter"></a></p>
+                    <p class="item_subtitle">Pageviews: <a id="counter"></a></p>
                 </div>
         </div>
     </div>
-    <script>
-        const pageviewCount = document.getElementById('pageview_count');
-        const visitsCount = document.getElementById('visit_count');
-
-        if(sessionStorage.getItem('visits') == null){
-            //new visit and pageview
-        }else{
-            //pageview
-        }
-
-        
-
-        sessionStorage.setItem('visit','x');
-
-
-    </script>
+ 
 
 </body> 
 
